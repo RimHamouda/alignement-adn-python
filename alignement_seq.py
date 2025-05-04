@@ -29,7 +29,7 @@ alignment2 = pairwise2.align.globalms(seq1, seq2, 2, -1, -2, -0.5)
 best_alignment = alignment2[0]
 
 #sauvegarder l'alignement personnalisé
-with open("alignement_personnalisé", "w")as fichier:
+with open("alignement_personnalisé.txt", "w")as fichier:
     fichier.write(format_alignment(*best_alignment))
 
 
